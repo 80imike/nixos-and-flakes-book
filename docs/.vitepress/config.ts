@@ -75,7 +75,7 @@ export default defineConfig({
     config: (md) => {
       // add support for footnote
       md.use(require("markdown-it-footnote"))
-      md.use(require("markdown-it-cjk-breaks"))
+      md.use(require("@searking/markdown-it-cjk-breaks"))
     },
   },
 
@@ -235,7 +235,7 @@ function themeConfigEnglish() {
             { text: "Introduction", link: "/nix-store/intro.md" },
             {
               text: "Add Binary Cache Servers",
-              link: "nix-store/add-binary-cache-servers.md",
+              link: "/nix-store/add-binary-cache-servers.md",
             },
             {
               text: "Host Your Own Binary Cache Server",
